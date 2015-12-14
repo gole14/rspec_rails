@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre completo:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Fecha de nacimiento:</strong>
+  <%= @student.birthdate %>
+</p>
+
+<p>
+  <strong>Número de control:</strong>
+  <%= @student.control_number %>
+</p>
+
+<p>
+  <strong>Semestre:</strong>
+  <%= @student.semester %>
+</p>
+
+<%= link_to 'Editar', edit_student_path(@student) %> |
+<%= link_to 'Atrás', root_path %>
